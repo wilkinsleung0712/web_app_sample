@@ -44,4 +44,7 @@ app.controller('MainCtrl',['$scope','$log','$window',function($scope,$log,$windo
   self.deleteMessage = function(){
     self.messages.pop();
   }
+
+  //testing for scope changes
+  $scope.scopemessages = "scopemessages in MainCtrl's scope";
 }]);
