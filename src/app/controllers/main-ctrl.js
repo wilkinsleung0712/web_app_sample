@@ -1,5 +1,5 @@
-app.controller('MainCtrl',['$log','$window',function($log,$window){
-  $log.info("MainCtrl");
+app.controller('MainCtrl',['$scope','$log','$window',function($scope,$log,$window){
+  $log.info("->MainCtrl");
   var self = this;
   // CHECK about creating javascript object
   //http://stackoverflow.com/questions/8224680/create-an-object-with-properties
