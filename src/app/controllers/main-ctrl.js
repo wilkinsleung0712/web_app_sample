@@ -47,4 +47,8 @@ app.controller('MainCtrl',['$scope','$log','$window',function($scope,$log,$windo
 
   //testing for scope changes
   $scope.scopemessages = "scopemessages in MainCtrl's scope";
+
+  self.alterMessage = function(){
+    $window.alert($scope.scopemessages);
+  }
 }]);

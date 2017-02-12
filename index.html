@@ -102,7 +102,16 @@
                         </span>
                       </div>
                     </div>
-                      <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    <!-- Directive sample -->
+                    <h1> Directive sample</h1>
+                    <my-entering></my-entering>
+
+                    <my-custom-ctrl-directive entering="fun.start('This is from a custom message')"></my-custom-ctrl-directive>
+
+                    <!-- Say something! -->
+                    <h1>Say something!</h1>
+                    <directive-parent></directive-parent>
+                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                 </div>
             </div>
         </div>
@@ -122,6 +131,14 @@
     <script src="src/app/app.js"></script>
     <script src="src/app/controllers/main-ctrl.js"></script>
     <script src="src/app/controllers/add-message-ctrl.js"></script>
+
+    <script src="src/app/controllers/directive-to-directive-ctrl.js"></script>
+
+    <!-- Angular Directive -->
+    <script src="src/app/directives/entering-directive.js"></script>
+    <script src="src/app/directives/custom-ctrl-entering-directive.js"></script>
+
+    <script src="src/app/directives/directive-one.js"></script>
     <!-- Menu Toggle Script -->
     <script>
     $("#menu-toggle").click(function(e) {
